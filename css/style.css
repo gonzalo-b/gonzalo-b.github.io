@@ -100,6 +100,12 @@ hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity
 #experiences .experience .experience-details * { color: #00b3d1; }
 #experiences .experience .experience-details .seperator { color: #BCBCBC; }
 
+#experiencia .experience { margin-bottom: 20px; }
+#experiencia .experience p > strong { display: block; padding-top: 8px; margin-bottom: 10px; }
+#experiencia .experience .experience-details { display: block; margin-top: 6px; }
+#experiencia .experience .experience-details * { color: #00b3d1; }
+#experiencia .experience .experience-details .seperator { color: #BCBCBC; }
+
 #abilities ul > li { min-height: 30px; padding: 3px 0px; }
 #abilities ul > li:hover { background: #F2F2F2; }
 #abilities ul > li .ability-title { display: inline-block; width: 60%; }
@@ -117,6 +123,23 @@ hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity
 
 #abilities ul > li:hover .ability-score .glyphicon { margin-left: 2px; } 
 
+
+#habilidades ul > li { min-height: 30px; padding: 3px 0px; }
+#habilidades ul > li:hover { background: #F2F2F2; }
+#habilidades ul > li .ability-title { display: inline-block; width: 60%; }
+#habilidades ul > li .ability-score { float: right; }
+#habilidades ul > li .ability-score .glyphicon { 
+	color: #DFE0E0; 
+	font-size: 14px; 
+	 
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+#habilidades ul > li .ability-score .glyphicon.filled { color: #00b3d1; }
+
+#habilidades ul > li:hover .ability-score .glyphicon { margin-left: 2px; } 
 #interests .left { float: left; }
 #interests .right { float: right; }
 #interests img { width: 80%; height: auto; }
@@ -181,11 +204,61 @@ hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity
 	padding: 15px;
 }
 
+#proyectos .row > div { margin-bottom: 30px; }
+#proyectos figure { position: relative; overflow: hidden; }
+#proyectos figure h3 { color: #FFF; font-weight: 600; margin-bottom: 5px;
+    text-align: center;
+    margin-top: 90px; }
+#proyectos figure p > strong { width: 60px; display: inline-block; margin: 0px; }
+#proyectos figure img { height: 300px;}
+
+#proyectos figure figcaption {
+    padding: 20px 30px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+
+}
+#proyectos figure a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+}
+#proyectos figure .icon { 
+	background: #00b3d1;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 48px;
+	height: 48px;
+}
+#proyectos figure .icon span {
+	font-size: 18px;
+	line-height: 18px;
+	padding: 15px;
+}
+
+
 #contact { }
 #contact h2, #contact .row * { color: #FFFFFF;text-align: center; }
 #contact a { display: block; line-height: 32px; margin-bottom: 20px; opacity: 0.6; filter:alpha(opacity=60);  }
 #contact a .icon { float: left; margin-right: 20px; }
 #contact a:hover { opacity: 1; filter:alpha(opacity=100); text-decoration: none; }
+
+#contacto { }
+#contacto h2, #contacto .row * { color: #FFFFFF;text-align: center; }
+#contacto a { display: block; line-height: 32px; margin-bottom: 20px; opacity: 0.6; filter:alpha(opacity=60);  }
+#contacto a .icon { float: left; margin-right: 20px; }
+#contacto a:hover { opacity: 1; filter:alpha(opacity=100); text-decoration: none; }
 
 .opl {
 	position:absolute;
@@ -230,6 +303,9 @@ hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity
 	#experiences .experience .experience-details > span { display: block; margin-bottom: 6px; }
 	#experiences .experience .experience-details .seperator { display: none; }
 	
+	#experiencia .experience .experience-details > span { display: block; margin-bottom: 6px; }
+	#experiencia .experience .experience-details .seperator { display: none; }
+
 	#interests .left { float: none; }
 	#interests .right { float: none; }
 	
@@ -369,5 +445,5 @@ figure.effect:hover p {
 	margin-bottom: 50px
 }
 .top-buffer{
-	margin-top: 20px
+	margin-top: 20px;
 }
