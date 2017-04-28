@@ -368,3 +368,6 @@ figure.effect:hover p {
 	text-transform: uppercase;
 	margin-bottom: 50px
 }
+.top-buffer{
+	margin-top: 20px
+}
